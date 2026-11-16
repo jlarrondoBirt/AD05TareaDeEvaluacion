@@ -37,13 +37,9 @@
                 <tr th:each="pelicula : ${peliculas}">
 
                     <td th:text="${pelicula.idPelicula}"></td>
-
                     <td th:text="${pelicula.titulo}"></td>
-
                     <td th:text="${pelicula.anio}"></td>
-
                     <td th:text="${pelicula.genero}"></td>
-
                     <td th:text="${pelicula.director.nombre + ' ' + pelicula.director.apellido}"></td>
 
                     <td>
@@ -63,18 +59,14 @@
 
                 </tr>
 
-                <tr th:if="${#lists.isEmpty(peliculas)}"> <td colspan="6" class="text-center">
-                        No hay películas registradas.
-                    </td>
+                <tr th:if="${#lists.isEmpty(peliculas)}"> <td colspan="6" class="text-center"> No hay películas registradas. </td>
                 </tr>
 
             </tbody>
 
         </table>
 
-        <a th:href="@{/}" class="btn btn-secondary">
-            Volver al inicio
-        </a>
+        <a th:href="@{/}" class="btn btn-secondary"> Volver al inicio </a>
 
     </div>
 

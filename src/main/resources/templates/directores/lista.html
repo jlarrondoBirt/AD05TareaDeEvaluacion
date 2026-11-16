@@ -59,18 +59,14 @@
 
                 </tr>
 
-                <tr th:if="${#lists.isEmpty(directores)}"> <td colspan="6" class="text-center">
-                        No hay directores registrados.
-                    </td>
+                <tr th:if="${#lists.isEmpty(directores)}"> <td colspan="6" class="text-center"> No hay directores registrados. </td>
                 </tr>
 
             </tbody>
 
         </table>
 
-        <a th:href="@{/}" class="btn btn-secondary">
-            Volver al inicio
-        </a>
+        <a th:href="@{/}" class="btn btn-secondary"> Volver al inicio </a>
 
     </div>
 

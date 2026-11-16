@@ -72,8 +72,7 @@ public class Director {
         this.peliculas = peliculas;
     }
 
-    public Director(Integer idDirector, String nombre, String apellido,
-                    String nacionalidad, int edad, List<Pelicula> peliculas) {
+    public Director(Integer idDirector, String nombre, String apellido, String nacionalidad, int edad, List<Pelicula> peliculas) {
         super();
         this.idDirector = idDirector;
         this.nombre = nombre;

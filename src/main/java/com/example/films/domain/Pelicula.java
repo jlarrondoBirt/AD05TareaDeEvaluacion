@@ -62,8 +62,7 @@ public class Pelicula {
         this.director = director;
     }
 
-    public Pelicula(Integer idPelicula, String titulo, int anio,
-                    String genero, Director director) {
+    public Pelicula(Integer idPelicula, String titulo, int anio, String genero, Director director) {
         super();
         this.idPelicula = idPelicula;
         this.titulo = titulo;
